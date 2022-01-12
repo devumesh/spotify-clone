@@ -1,0 +1,35 @@
+.__sidebar {
+    height: 100vh;
+    flex: 0.2;
+    background: #000;
+    min-width: 240px;
+    padding: 20px 10px;
+}
+
+.__options{
+    font-size: 16px;
+    color: #888;
+    font-weight: 500;
+    transition: 0.2s all ease-in;
+}
+
+.__options h1{
+    padding: 7px 0px;
+}
+
+.__options-icon {
+    margin: 7px 15px;
+}
+
+.__options-playlist {
+    margin-top: 20px;
+}
+
+.__options-liked{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+}
+.__playlist {
+    font-size: 14px ;
+    padding: 10px 15px;
+}

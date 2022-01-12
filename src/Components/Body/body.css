@@ -1,0 +1,6 @@
+.__body {
+    flex: 0.8;
+    background: linear-gradient(#b54141, #000);
+    padding: 30px;
+    color: #fff;
+}
