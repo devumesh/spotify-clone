@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {DataLayerProvider} from './DataLayer';
 import reducer, { initialState } from './reducer';
+import "dotenv/config";
 
 ReactDOM.render(
   <React.StrictMode>

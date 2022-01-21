@@ -32,7 +32,7 @@ const Footer = ({spotify}) => {
     }, [spotify, dispatch]);
 
     // handling volume UI
-    const [volume, setVolume] = useState(0);
+    const [volume, setVolume] = useState(70);
     const handleVolumeChange = (e, value) => {
         setVolume(value);
     }

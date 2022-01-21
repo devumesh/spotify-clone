@@ -8,7 +8,7 @@ export const initialState = {
 };
 
 const reducer = (state, action) => {
-    console.log(action);
+    // console.log(action);
 
 
     // action.payload key is a variable
