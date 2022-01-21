@@ -6,17 +6,17 @@ import AddBoxRoundedIcon from '@mui/icons-material/AddBoxRounded';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import { useDataLayerValue } from '../../DataLayer';
 
-const SidebarOption = ({option, Icon, playlist}) => {
+const SidebarOption = ({option, Icon, playlist, fetchPlaylists}) => {
     return (
         <div className="flex cursor-pointer hover:text-white __options">
             { Icon && <Icon className="__options-icon" /> }
             { option && <h1 className="">{option}</h1> }
-            { playlist && <p className="text-sm py-1">{playlist}</p> }
+            { playlist && <p className="text-sm py-1" onClick={() => fetchPlaylists(playlist?.id)}>{playlist?.name}</p> }
         </div>
     );
 }
 
-const Sidebar = () => {
+const Sidebar = ({fetchPlaylists}) => {
     const {playlists}= useDataLayerValue()[0];
 
     return ( 
@@ -36,7 +36,7 @@ const Sidebar = () => {
             </div>
             <div className="__playlist">
                 { playlists?.items?.map(item => {
-                    return <SidebarOption playlist={item.name} />
+                    return <SidebarOption playlist={item} fetchPlaylists={fetchPlaylists} key={item.id} />
                 }) }
             </div>
         </div>

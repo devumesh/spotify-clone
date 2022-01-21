@@ -31,6 +31,13 @@ function App() {
           playlists: playlists
         })
       }).catch( err => console.log("Error in fetching the playlist: ", err));
+
+      spotify.getPlaylist('37i9dQZF1DX1UGmKmt2DtZ').then(data => {
+        dispatch({
+          type: 'SET_PLAYLIST_SONGS',
+          playlistData: data
+        })
+      }).catch( err => console.log("Error in updating the songs of playlist: ", err));
     }
   }, [dispatch]);
 

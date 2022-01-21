@@ -20,6 +20,7 @@
 
 .__play-controls {
     margin-top: 10px;
+    min-width: 300px;
 }
 
 .__play-controls svg {

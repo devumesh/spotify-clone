@@ -1,6 +1,78 @@
 .__body {
+    height: 100vh;
     flex: 0.8;
     background: linear-gradient(#b54141, #000);
-    padding: 30px;
+    padding: 30px 0;
     color: #fff;
+    overflow-y: overlay;
+}
+
+.__body::-webkit-scrollbar {
+    display: none;
+}
+
+.__banner {
+    width: 100%;
+    padding: 0 50px 30px;
+    box-shadow: 0 8px 6px -6px rgba(0,0,0,0.2);
+}
+
+.__banner-playlist-info {
+    padding: 0 20px;
+}
+
+.__playlist-banner-img {
+    height: 192px;
+    width: 192px;
+    object-fit: contain;
+}
+
+.__playlist-title {
+    overflow: hidden;
+    color: #fff;
+    font-size: 62px;
+    font-weight: 900;
+}
+
+.__playlist-desc {
+    opacity: 0.7;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.__playlist-controls {
+    margin: 10px 50px;
+}
+
+.__controls-play-btn {
+    transform: scale(2.5);
+    color: #1DB954;
+}
+.__controls-fav-btn {
+    transform: scale(1.5);
+}
+.__controls-menu-btn {
+    transform: scale(1.2);
+}
+.__controls-play-btn,
+.__controls-fav-btn,
+.__controls-menu-btn {
+    margin: 20px 30px;
+    opacity: 0.6;
+}
+.__controls-play-btn,
+.__controls-fav-btn:hover,
+.__controls-menu-btn:hover {
+    opacity: 1; 
+}
+.songsRow {
+    padding: 20px 0px;
+    background: rgba(0,0,0,0.5);
+    margin-bottom: 55px;
+}
+
+@media screen and (max-width: 1023px) {
+    .__playlist-title {
+        font-size: 32px;
+    }
 }

@@ -1,0 +1,12 @@
+.__user-info {
+    border-radius: 50px;
+    max-width: 150px;
+    overflow: hidden;
+    background: #333;
+    margin-right: 30px;
+}
+
+.__user-info h3 {
+    font-size: 12px;
+    font-weight: 700;
+}
